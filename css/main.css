@@ -148,7 +148,6 @@ p {
 
 .gallery-1 {
     width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -156,11 +155,11 @@ p {
     flex-direction: row;
     max-height: 100vh;
     background-color: #f2f2f2;
-    padding: 1rem;
+    padding: 1.8rem;
 }
 
 .gallery-1 img {
-    margin: 0.5rem;
+    margin: 1rem;
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
     max-width: 26vw;
 }
@@ -174,7 +173,7 @@ p {
     align-items: center;
     flex-direction: row;
     background-color: #f2f2f2;
-    padding: 1rem 0 0.8rem 0;
+    padding: 2rem 0 1.7rem 0;
 }
 
 .gallery-2 img {  
@@ -282,6 +281,15 @@ footer {
 
     .gallery-3 {
         grid-gap: 0.2rem;
+        padding: 0.3rem;
+    }
+
+    .gallery-1 {
+        padding: 1rem 0;
+    }
+
+    .gallery-2 {
+        padding: 1rem 0 0.7rem;
     }
 }
 
