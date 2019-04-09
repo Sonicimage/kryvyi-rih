@@ -125,13 +125,20 @@ iframe {
 .text-wrapper {
     width: 50%;
     margin: 0 auto;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background: #f2f2f2;
 }
 
 h3 {
     font-family: 'Merriweather', serif;
     font-size: 2rem;
-    padding: 6rem 0 4rem 0;
+    padding: 2rem 0;
+    line-height: 1.3;
 }
 
 p {
@@ -144,10 +151,12 @@ p {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     max-height: 100vh;
+    background-color: #f2f2f2;
+    padding: 1rem;
 }
 
 .gallery-1 img {
@@ -161,18 +170,20 @@ p {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
+    background-color: #f2f2f2;
+    padding: 1rem 0 0.8rem 0;
 }
 
-.gallery-2 img {
-    margin: 0.5rem;
+.gallery-2 img {  
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
     max-width: 20vw;
 }
 
-ol li {
+ol li,
+ul li {
     line-height: 1.5;
 }
 
@@ -182,7 +193,8 @@ ol li {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(7, 5vw);
     grid-gap: 1rem;
-    padding: 1.5rem;
+    background-color: #f2f2f2;
+    padding: 1rem;    
 }
 
 .gal-1 {
@@ -279,6 +291,10 @@ footer {
 
     .navbar {
         display: none;
+    }
+
+    .gallery-3 {
+        grid-gap: 0.2rem;
     }
 }
 
