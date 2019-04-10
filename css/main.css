@@ -49,7 +49,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     position: relative;
 }
@@ -101,8 +101,9 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-style: italic;
+    margin-top: 35px;
 }
 
 .video-container {
@@ -112,6 +113,7 @@ h2 {
     height: 0;
     overflow: hidden;
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+    display: block;
 }
 
 iframe {
@@ -145,8 +147,6 @@ p {
     line-height: 1.5;
     margin-bottom: 2rem;
 }
-
-
 
 .gallery-1 {
     width: 100%;
@@ -281,10 +281,48 @@ footer {
     overflow: hidden;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
+
+    .text-wrapper {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .text-wrapper {
+        width: 70%;
+    }
+
+    h2 {
+        line-height: 1.5;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
 
     .navbar {
         display: none;
+    }
+
+    .text-wrapper {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 4rem;
     }
 
     .gallery-3 {
@@ -298,6 +336,34 @@ footer {
 
     .gallery-2 {
         padding: 0.8rem 0 0.6rem;
+    }
+
+    .gallery-1 figure {
+        width: 49%;
+    }
+
+    .gallery-2 figure {
+        width: 49%;
+    }
+}
+
+@media only screen and  (max-width: 600px) {
+
+    header {
+        height: 80vh;
+    }
+
+    .video-container {
+        display: none;
+    }
+    
+    .text-wrapper {
+        width: 85%;
+    }
+
+    h2 {
+        color: #fff;
+        margin-top: 50px;
     }
 }
 
